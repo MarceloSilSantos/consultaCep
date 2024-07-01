@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="">cidades</a>
+                <a href="">Estados</a>
+                <a href="">Fale Conosco</a>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <h1>Consulta de endereço CEP</h1>
+        <form id="cepForm">
+            <input type="text" name="cep" id="cep" required maxlength="9" pattern="[0-9] {5} -?" placeholder="Digite o CEP" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="enderecoCard" style="display: none;">
+            <h2>Endereço Encontrado:</h2>
+            <p><strong>CEP:</strong><span id="cepResultado"></span></p>
+            <p><strong>Logradouro</strong><span id="logradouroResultado"></span></p>
+            <p><strong>Bairro</strong><span id="bairroResultado"></span></p>
+            <p><strong>Cidade/Estado</strong><span id="cidadeEstadoResultado"></span></p>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por: Teste CEP + codification helped by ChatGPT
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
